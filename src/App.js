@@ -6,7 +6,7 @@ const App = () => {
   const [incidents, setIncidents] = useState([])
 
   useEffect(()=>{
-     axios.get('/api/now/table/incident?sysparm_limit=10')
+     axios.get('/api/now/table/incident?sysparm_limit=20')
           .then(res => {
             setIncidents(res.data.result)
           })
